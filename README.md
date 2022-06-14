@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+###  Clone of website <span>Sephora Clone<span>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ <h2>Welcome to this repo</h2>
 
-## Available Scripts
+In case of any suggestion and query feel free to connect 
+ 
+ 
+ <h1>TOOLS AND TECHNOLOGY USED ></h1>
+  <li>HTML (through React)</li>
+     <li>css</li>
+<li>javascript</li>  
+<li>React</li>
+<li>font Awesom icons</li>
+<li>bootstrap (for styling flash mesage)</li>
+<li>Nodejs</li>
+<li>mongodb atlas (for database)</li>
+<li>concurrently : 6.3.0</li>
+<li>cors : 2.8.5</li>
+ <li>React</li>
+ <li>Node.js</li>
 
-In the project directory, you can run:
+ 
+ 
+  <h1>Node packages and libraries ></h1>
+  <li>styled-components : 5.3.1</li>
+ <li>cors : 2.8.5</li>
+ <li>express : 4.17.1</li>
+ <li>mongoose : 6.0.8</li>
+<li>nodemon : 2.0.13</li>
+ <li>react : 17.0.2</li>
+ <li>react-dom : 17.0.2</li>
+ <li>react-router-dom : 5.3.0</li>
+ <li>react-scripts : 4.0.0</li>
+ <li>styled-components : 5.3.1</li>
+ 
+ 
+ 
+ <h1>About </h1>
+Sephora is a French multinational retailer of famous beauty brand that has captured the hearts of millions of beauty shoppers worldwide. This company is also expanding around the globe and is available in several countries. The brand offers different beauty products from high-end beauty brands and makes them accessible to users even before purchasing.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Project Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+_To start with the Project install the dependecies 
 
-### `npm test`
+> > ⌘ **npm install --force **
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> After that 
 
-### `npm run build`
+> Run the following command in terminal_
+ 
+> > ⌘ **npm start**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+>   and than you can explore the project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+_Or you can directly explore our project through this link_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Deployment Link
+ 
+ 
+ ### _Following are the Screenshots for the reference_
 
-### `npm run eject`
+- **Landing Page**
+  ![Landing Page](https://miro.medium.com/max/1400/1*UB-C6C9NNV3udcmNFoyOBg.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Product Page**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  ![Product Page](https://miro.medium.com/max/940/1*5HafmzQ-Z4ySizSHgx_TUQ.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Product-details Page**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  ![Product-details Page](https://miro.medium.com/max/1400/1*vDtXNb8Ylet-4ikgvHtknQ.png)
 
-## Learn More
+- **Cart-Page**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  ![Cart-Page](https://miro.medium.com/max/1400/1*ctMmSn6msr_SwWDU8YTKig.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Checkout Page**
 
-### Code Splitting
+  ![Checkout Page](https://miro.medium.com/max/1400/1*pQiczrwkoRosV5QUJEr5Vg.png)
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Sign-In Page**
 
-### Analyzing the Bundle Size
+  ![Sign-In Page](https://miro.medium.com/max/1400/1*A2cMBrWWvcafYev5_zC3DA.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Payment Page**
 
-### Making a Progressive Web App
+  ![Payment Page](https://miro.medium.com/max/1400/1*aBg4DT5IG4JAFJ68pwQGqA.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### About Project
 
-### Deployment
+> 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+### Medium Link
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+------
+
+
+### Netlify Link
+ ------
+ <h1>WEBSITE USER FLOW ></h1>
+ ----
+the user flow that we tried to maintain is,
+
+home -> login/signup -> dashboard -> get started to products -> create user Id-> Enter email details -> choose products -> Product detail page-> -> Products Check out page ->payment status -> order placed -> track status.
+ 
+----
