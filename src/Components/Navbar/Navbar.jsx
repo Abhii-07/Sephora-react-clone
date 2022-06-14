@@ -75,28 +75,28 @@ const Navbar = () => {
                                     <div>
                                         <ul>
                                             <li className="first">
-                                                <a href="">FACE</a>
+                                                <Link to={"/Makeup"}>FACE</Link>
                                             </li>
                                             <li className="active">
-                                                <a href="">Foundation</a>
+                                                <Link to={"/Makeup"}>Foundation</Link>
                                             </li>
                                             <li className="active">
-                                                <a href="">BB & CC Cream</a>
+                                                <Link to={"/Makeup"}>BB & CC Cream</Link>
                                             </li>
                                             <li className="active">
-                                                <a href="">Concealer</a>
+                                                <Link to={"/Makeup"}>Concealer</Link>
                                             </li>
                                             <li className="active">
-                                                <a href="">Face Primer</a>
+                                                <Link to={"/Makeup"}>Face Primer</Link>
                                             </li>
                                             <li className="active">
-                                                <a href="">Highlighter</a>
+                                                <Link to={"/Makeup"}>Highlighter</Link>
                                             </li>
                                             <li className="active">
-                                                <a href="">Makeup Palette</a>
+                                                <Link to={"/Makeup"}>Makeup Palette</Link>
                                             </li>
                                             <li className="active">
-                                                <a href="">Face Brushes</a>
+                                                <Link to={"/Makeup"}>Face Brushes</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -104,40 +104,51 @@ const Navbar = () => {
                                         {/* <h5>	EYE</h5> */}
                                         <ul>
                                             <li className="first">
-                                                <a href="">EYE</a>
+
+                                                <Link to={"/Makeup"}>EYE</Link>
+
                                             </li>
                                             <li>
-                                                <a href="">Eye Palettes</a>
+
+                                                <Link to={"/Makeup"}>Eye Palettes</Link>
                                             </li>
                                             <li>
-                                                <a href="">Mascara</a>
+
+                                                <Link to={"/Makeup"}>Mascara</Link>
                                             </li>
                                             <li>
-                                                <a href="">Eyeliner</a>
+
+                                                <Link to={"/Makeup"}>Eyeliner</Link>
                                             </li>
                                             <li>
-                                                <a href="">Eyebrow</a>
+
+                                                <Link to={"/Makeup"}>Eyebrow</Link>
                                             </li>
                                             <li>
-                                                <a href="">Eyeshadowr</a>
+
+                                                <Link to={"/Makeup"}>Eyeshadow</Link>
                                             </li>
                                             <li>
-                                                <a href="">Eye Primer</a>
+
+                                                <Link to={"/Makeup"}>Eye Primer</Link>
                                             </li>
                                             <li>
-                                                <a href="">Eye Brushes</a>
+
+                                                <Link to={"/Makeup"}>Eye Brushes</Link>
                                             </li>
                                             <li>
-                                                <a href="">Contact Lenses</a>
+
+                                                <Link to={"/Makeup"}>FACE</Link>
                                             </li>
                                         </ul>
                                     </div>
                                     <div>
                                         {/* <h5>LIP</h5> */}
                                         <ul>
-                                            <Link to={`/mackupproduct`}>
+                                            <Link to={`/Makeup`}>
                                                 <li className="first">
                                                     <a href="">LIP</a>
+                                                
                                                 </li>
                                                 <li>
                                                     <a href="">Lip Stain</a>
@@ -163,6 +174,7 @@ const Navbar = () => {
                                     <div>
                                         {/* <h5>CHEEK</h5> */}
                                         <ul>
+                                        <Link to={`/Makeup`}>
                                             <li className="first">
                                                 <a href="">CHEEK</a>
                                             </li>
@@ -178,11 +190,13 @@ const Navbar = () => {
                                             <li>
                                                 <a href="">Face Oils</a>
                                             </li>
+                                            </Link>
                                         </ul>
                                     </div>
                                     <div>
                                         {/* <h5>NAIL MAKEUP</h5> */}
                                         <ul>
+                                        <Link to={`/Makeup`}>
                                             <li className="first">
                                                 <a href="">NAIL MAKEUP </a>
                                             </li>
@@ -201,6 +215,7 @@ const Navbar = () => {
                                             <li>
                                                 <a href="">Pedicure Tools</a>
                                             </li>
+                                            </Link>
                                         </ul>
                                     </div>
                                 </div>
@@ -215,6 +230,7 @@ const Navbar = () => {
                                     <div>
                                         {/* <h5>FACE</h5> */}
                                         <ul>
+                                        <Link to={`/Makeup`}>
                                             <li className="first">
                                                 <a href="">FACE</a>
                                             </li>
@@ -239,10 +255,12 @@ const Navbar = () => {
                                             <li className="active">
                                                 <a href="">Face Brushes</a>
                                             </li>
+                                            </Link>
                                         </ul>
                                     </div>
                                     <div>
                                         <ul>
+                                        <Link to={`/Makeup`}>
                                             <li className="first">
                                                 <a href="">EYE </a>
                                             </li>
@@ -270,12 +288,13 @@ const Navbar = () => {
                                             <li>
                                                 <a href="">Contact Lenses</a>
                                             </li>
+                                            </Link>
                                         </ul>
                                     </div>
                                     <div>
                                         {/* <h5>LIP</h5> */}
                                         <ul>
-                                            <Link to={`/mackupproduct`}>
+                                            <Link to={`/Makeup`}>
                                                 <li className="first">
                                                     <a href="">LIP</a>
                                                 </li>
@@ -303,6 +322,7 @@ const Navbar = () => {
                                     <div>
                                         {/* <h5>CHEEK</h5> */}
                                         <ul>
+                                        <Link to={`/Makeup`}>
                                             <li className="first">
                                                 <a href="">CHEEK </a>
                                             </li>
@@ -318,12 +338,14 @@ const Navbar = () => {
                                             <li>
                                                 <a href="">Face Oils</a>
                                             </li>
+                                            </Link>
                                         </ul>
                                     </div>
                                     <div>
                                         {/* <h3>NAIL MAKEUP</h3> */}
 
                                         <ul>
+                                        <Link to={`/Makeup`}>
                                             <li className="first">
                                                 <a href="">NAIL MAKEUP </a>
                                             </li>
@@ -342,6 +364,7 @@ const Navbar = () => {
                                             <li>
                                                 <a href="">Pedicure Tools</a>
                                             </li>
+                                            </Link>
                                         </ul>
                                     </div>
                                 </div>
@@ -356,6 +379,7 @@ const Navbar = () => {
                                     <div>
                                         {/* <h5>WOMEN</h5> */}
                                         <ul>
+                                             <Link to={`/Makeup`}>
                                             <li className="first">
                                                 <a href="">WOMEN </a>
                                             </li>
@@ -365,6 +389,7 @@ const Navbar = () => {
                                             <li>
                                                 <a href="">Mists and Deodorants</a>
                                             </li>
+                                            </Link>
                                         </ul>
                                     </div>
                                     <div>
