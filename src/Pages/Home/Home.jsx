@@ -21,7 +21,7 @@ export const Home = () => {
  {/* <Header/> */}
  {/* <Navbar/> */}
 
-<Slider1></Slider1>
+<Slider1/>
  <Slider2></Slider2>
  <br /> <br />
  <HomePart3></HomePart3>

@@ -9,6 +9,11 @@ import { Link } from "react-router-dom";
   const [product, setproduct] = useState([]);
   const [brandfilter, setBrandFilter] = useState("ALL");
   const [priceRane, setPriceRange] = useState("0-10000");
+  const [cart,setCart] = useState([])
+
+  // useEffect(()=> {
+  //   axios.post()
+  // },[]);
 
   useEffect(() => {
     getdata();
@@ -23,20 +28,20 @@ import { Link } from "react-router-dom";
       });
   };
   const handelSort = (by) => {
-    if (by === "PLH") {
+    if (by === "lowToHigh") {
       let sorted = product.sort((a, b) => {
         return a.price - b.price;
       });
 
       let newData = [...sorted];
       setproduct(newData);
-    } else if (by === "PHL") {
+    } else if (by === "highToLow") {
       let sorted = product.sort((a, b) => {
         return b.price - a.price;
       });
       let newData = [...sorted];
       setproduct(newData);
-    } else if (by === "POP") {
+    } else if (by === "popularity") {
       getdata();
     }
   };
@@ -95,10 +100,12 @@ import { Link } from "react-router-dom";
             handelSort(e.target.value);
           }}
         >
-          <option value="POP">Sort</option>
-          <option value="PLH">Price:Low to High</option>
-          <option value="PHL">Price:High to Low</option>
-          <option value="POP">Popularity</option>
+          <option value="popularity">Popularity</option>
+          <option value="lowToHigh">Price:Low to High</option>
+          <option value="highToLow">Price:High to Low</option>
+          <option value="popularity">Popularity</option>
+          <option value="popularity">Newest</option>
+          <option value="popularit">Discount</option>
         </select>
       </div>
 
@@ -202,14 +209,19 @@ import { Link } from "react-router-dom";
                     <img src={e.image2_url} id="productimg2" />
                     </Link>
                     <div id="Scrollup_Button">
+                      {/* <button onClick={addTocart}>
+                        <HiOutlineShoppingBag id="symbollcss"></HiOutlineShoppingBag>
+                        <span id="textCSS">ADD TO CART</span>
+                      </button> */}
+
                       <button
                         onClick={(event) => {
                           var cartArr =
-                            JSON.parse(localStorage.getItem("sai")) ||
+                            JSON.parse(localStorage.getItem("shopping-cart")) ||
                             [];
                           cartArr.push(e);
                           localStorage.setItem(
-                            "sai",
+                            "shopping-cart",
                             JSON.stringify(cartArr)
                           );
                         }}
@@ -233,6 +245,7 @@ import { Link } from "react-router-dom";
                         <MdFavoriteBorder id="symbollcss"></MdFavoriteBorder>
                         <span id="textCSS">FAVOURITE</span>
                       </button>
+                      
                     </div>
                   </div>
                   <Link to={`/productdetail`} style={{textDecoration: "none"}}>

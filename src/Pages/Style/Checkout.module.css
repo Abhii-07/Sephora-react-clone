@@ -1,0 +1,86 @@
+.title {
+    background-color: rgb(39, 159, 226);
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+.cardDiv {
+    display: grid;
+    margin: auto;
+    gap: 5px;
+    grid-template-columns: repeat(3, auto);
+}
+
+.wishlistInfo {
+    margin-top: auto;
+    /* line-height: 5px; */
+}
+
+.imageWishlist {
+    width: 200px;
+}
+
+
+.displayCartPage {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgDiv{
+    width: auto;
+    /* border: 1px solid red; */
+}
+.infoDiv{
+    text-align: left;
+    width: 400px;
+    color: black;
+    
+}
+
+.firstBox{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    
+}
+
+.secondBox{
+    line-height: -10px;
+    font-size: 30px;
+    gap: 5px;
+    /* border: 1px solid red; */
+    width: 40%;
+}
+
+.checkoutBtn{
+    background-color: pink;
+    border: 0px;
+    width: 100%;
+    margin-top: 10px;
+}
+.ShopMoreBtn{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.productImg{
+    height: 150px;
+    width: 150px;
+}
+
+.cartCard{
+display: flex;
+justify-content: space-around;
+/* border: 1px solid red; */
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.removeItemDiv{
+    justify-content: space-between;
+    display: flex;
+    width: 150px;
+    text-decoration: underline;
+    color: black;
+}

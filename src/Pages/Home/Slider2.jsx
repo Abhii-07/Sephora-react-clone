@@ -7,6 +7,8 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { SliderDiv } from "../Style/SliderDiv"
 
+import { Link } from "react-router-dom";
+
 export const Slider2 = () => {
   const [videoImg, setvideoImg] = useState(false)
   

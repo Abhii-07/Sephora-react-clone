@@ -204,11 +204,11 @@ const Makeup = () => {
                         onClick={(event) => {
                          console.log(e)
                           var cartArr =
-                            JSON.parse(localStorage.getItem("makeup-cart")) ||
+                            JSON.parse(localStorage.getItem("shopping-cart")) ||
                             [];
                           cartArr.push(e);
                           localStorage.setItem(
-                            "makeup-cart",
+                            "shopping-cart",
                             JSON.stringify(cartArr)
                           );
                         }}

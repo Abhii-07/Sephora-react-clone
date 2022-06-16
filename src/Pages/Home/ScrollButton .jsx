@@ -1,3 +1,4 @@
+import { padding } from '@mui/system';
 import React, {useState} from 'react';
 import {FaArrowCircleUp} from 'react-icons/fa';
 import { Button } from './Style';
@@ -20,19 +21,17 @@ const scrollToTop = () =>{
 	window.scrollTo({
 	top: 0,
 	behavior: 'smooth'
-	/* you can also use 'auto' behaviour
-		in place of 'smooth' */
 	});
 };
 
 window.addEventListener('scroll', toggleVisible);
 
 return (
-	<Button>
-        {/* <div onClick={scrollToTop} style={{width:"100px", backgroundColor:"yellowgreen",display: visible ? 'inline' : 'none'}}>back to top</div> */}
-	<FaArrowCircleUp onClick={scrollToTop}
-            
-	style={{display: visible ? 'inline' : 'none'}} />
+	<Button>	
+	<div  style={{display:"flex" , justifyContent:"space-around" , backgroundColor:"yellowgreen",padding:"10px",width:"150px"}} onClick={scrollToTop}>
+	<FaArrowCircleUp  style={{display: visible ? 'inline' : 'none',marginTop:"5px",marginLeft:"5px"}} />
+	<span style={{}} >Back to top</span>
+	</div>
 	</Button>
 );
 }

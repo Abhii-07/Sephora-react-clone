@@ -8,20 +8,31 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   const [user, setUser] = useState([]);
-//   const [form123, setForm123] = useState("")
+  const getdata = async () => {
+    fetch(`https://sephora-clone.herokuapp.com/users`)
+      .then((d) => d.json())
+      .then((data) => {
+        setUser(data);
+        console.log(data);
+      });
+  };
+  useEffect(() => {
+    getdata();
+  }, []);
+
 
   const handleChange = (e) => {
-  
+
     localStorage.setItem("user", JSON.stringify(e.target.value));
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
 
   };
 
   const navigate = useNavigate();
-
   const responseSuccessGoogle = (response) => {
     console.log(response.profileObj, response.tokenId);
     setUser(response.profileObj, response.tokenId);
@@ -54,7 +65,7 @@ const Login = () => {
           width: "30%",
           height: "550px",
           margin: "auto",
-          marginTop:"20px"
+          marginTop: "20px"
         }}
       >
         <h1>Login </h1>
@@ -65,7 +76,7 @@ const Login = () => {
           <input
             type="email"
             name="email"
-           
+
             placeholder="Email or Phone Number"
             style={{ padding: "10px", margin: "10px", width: "260px" }}
           />
@@ -84,26 +95,26 @@ const Login = () => {
             placeholder="Enter the password"
             type="password"
             name="password"
-          
-           
+
+
             style={{ padding: "10px", margin: "10px", width: "260px" }}
           />
           <br />
           <br></br>
-          <Link to={`/home`}>
-          <Button
-            style={{
-              backgroundColor: "rgb(255,51,153)",
-              border: "none",
-              width: "90%",
-            }}
-            color="primary"
-            variant="contained"
-            value="Submit"
-          >
-            {" "}
-            Continue{" "}
-          </Button>
+          <Link to={`/`}>
+            <Button
+              style={{
+                backgroundColor: "rgb(255,51,153)",
+                border: "none",
+                width: "90%",
+              }}
+              color="primary"
+              variant="contained"
+              value="Submit"
+            >
+              {" "}
+              Continue{" "}
+            </Button>
           </Link>
           <br></br>
           <br></br>

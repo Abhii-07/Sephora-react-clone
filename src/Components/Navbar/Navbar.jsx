@@ -34,10 +34,11 @@ const Navbar = () => {
                     <div className="Navbar-16">
                         <div className="Navbar-17">
                             <li>
-                                <FiHeart />
+                                <Link to="/wishlist"><FiHeart style={{color:"pink"}}/></Link>
+                                
                             </li>
                             <li>|</li>
-                            <Link to={`/checkoutpage`}>
+                            <Link to={`/checkout`}>
                                 <li>
                                     <HiOutlineShoppingBag />
                                 </li>

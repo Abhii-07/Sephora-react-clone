@@ -1,0 +1,23 @@
+.title{
+    background-color: rgb(39,159,226);
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+.cardDiv{
+    display: grid;
+    margin: auto;
+    gap: 5px;
+    grid-template-columns: repeat(3,auto);
+}
+
+.wishlistInfo{
+    margin-top: auto;
+    /* line-height: 5px; */
+}
+
+.imageWishlist{
+    width: 200px;
+}

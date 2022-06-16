@@ -29,7 +29,7 @@ export const Slider1 = () => {
 
   return (
     <div >
-      <Carousel infinite={false}>
+      {/* <Carousel infinite={false}>
         {slideShowdata.map((e, i) =>
         (
           <Carousel.Item key={i} interval={3000} >
@@ -41,41 +41,37 @@ export const Slider1 = () => {
             />
           </Carousel.Item>
         ))}
-      </Carousel>
+      </Carousel> */}
+      <div id="demo" class="carousel slide" data-ride="carousel">
 
+        {/* <!-- Indicators --> */}
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
 
-      {/* <br />
-      <div id='divimage'>
-        {
-          divImage.map((e, i) =>
-          (
-            <div key={i}>
-              <img src={e} alt="" width="88%" height="100%" />
-            </div>
-          ))
-        }
-      </div>
-      <br /> <br />
-      <div>
-        <img width="85%" height="10%" src="https://logan.nnnow.com/content/dam/nnnow-project/10-feb-2022/SephoraBrandoftheweektext3310x240.jpg" alt="" />
-      </div>
-      <br />
-      <div>
-        <img width="81%" src="https://logan.nnnow.com/content/dam/nnnow-project/21-april-2022/HPBanner-Desktop.jpg" alt="" />
-      </div>
-      <br />
-      <div id='div2Image'>
-        {div2Image.map((e, i) =>
-        (
-          <div key={i}>
-            <img src={e} alt="" width="93%" />
+        {/* <!-- The slideshow --> */}
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/11-april-2022/SC_Homepage_Beautypowerforall_Desktop.jpg" alt="Los Angeles" width="1100" height="500" />
           </div>
-        ))}
+          <div class="carousel-item">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/11-april-2022/SC_Homepage_Beautypowerforall_Desktop.jpg" alt="Chicago" width="1100" height="500" />
+          </div>
+          <div class="carousel-item">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/11-april-2022/SC_Homepage_Beautypowerforall_Desktop.jpg" alt="New York" width="1100" height="500" />
+          </div>
+        </div>
+
+        {/* <!-- Left and right controls --> */}
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next" >
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
-      <br />
-      <div>
-        <img width="85%" height="10%" src="https://logan.nnnow.com/content/dam/nnnow-project/16-march-2022/justlanded.jpg" alt="" />
-      </div> */}
     </div>
 
   )

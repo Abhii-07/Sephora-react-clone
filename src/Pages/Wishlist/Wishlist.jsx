@@ -1,18 +1,36 @@
 import React from 'react'
-import { ProductCard } from '../../Components/Styled-Components/ProductStyle';
+import { WishlistCard } from '../../Components/Styled-Components/WishlistCard';
 import "../Style/MainBody.css";
+import styles from "../Style/Wishlist.module.css"
 
 const Wishlist = () => {
-    const details = JSON.parse(localStorage.getItem("sephorawishlist")) || [];
+  const wishlistItem = JSON.parse(localStorage.getItem("sephorawishlist")) || [];
+ 
+  const RemoveItem = (id) => {
+    wishlistItem = wishlistItem.filter((d) => d.id !== id);
+    localStorage.setItem("item", JSON.stringify(wishlistItem));
+    if (wishlistItem.length === 0) {
+      localStorage.removeItem("item");
+    }
+  }
+  
   return (
-    <div id="productpagecart">Wishlist
-        {details.map((d) => (
-            <ProductCard>
-                <img src={d.image_url} id="productimg1" />
-                <img src={d.image2_urll} id="productimg2" />
-                <h1>{d.brandname}</h1>
-            </ProductCard>
+    <div>
+      <h1 className={styles.title}>MY FAVOURITES</h1>
+      <div className={styles.cardDiv}>
+        {wishlistItem.map((d) => (
+          <WishlistCard>
+            <img src={d.image_url} className={styles.imageWishlist} />
+            <div className={styles.wishlistInfo}>
+              <p>{d.brandname}</p>
+              <h4>{d.productName}</h4>
+              <p>{d.background}</p>
+              <p style={{fontWeight:"Bold"}}>Rs {d.price}</p>
+              <p onClick={RemoveItem}>Remove</p>
+            </div>
+          </WishlistCard>
         ))}
+      </div>
 
 
     </div>
