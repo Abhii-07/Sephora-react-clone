@@ -80,10 +80,4 @@ _Or you can directly explore our project through this link_
 
 https://sephora-react-clone.vercel.app
  ------
- <h1>WEBSITE USER FLOW ></h1>
- ----
-the user flow that we tried to maintain is,
 
-home -> login/signup -> dashboard -> get started to products -> create user Id-> Enter email details -> choose products -> Product detail page-> -> Products Check out page ->payment status -> order placed -> track status.
- 
-----
