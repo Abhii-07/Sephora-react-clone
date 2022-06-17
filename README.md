@@ -1,7 +1,7 @@
 ###  Clone of website <span>Sephora Clone<span>
 
  <h1>About </h1>
-Sephora is a French multinational retailer of famous beauty brand that has captured the hearts of millions of beauty shoppers worldwide. This company is also expanding around the globe and is available in several countries. The brand offers different beauty products from high-end beauty brands and makes them accessible to users even before purchasing.
+Sephora is a French multinational retailer of famous beauty brand that has captured the hearts of millions of beauty shoppers worldwide. This company is also expanding around the globe and is available in several countries. 
  
  
  <h1>Tech Stack Used : </h1>
