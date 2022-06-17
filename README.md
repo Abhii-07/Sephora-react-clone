@@ -1,8 +1,7 @@
 ###  Clone of website <span>Sephora Clone<span>
 
- <h2>Welcome to this repo</h2>
-
-In case of any suggestion and query feel free to connect 
+ <h1>About </h1>
+Sephora is a French multinational retailer of famous beauty brand that has captured the hearts of millions of beauty shoppers worldwide. This company is also expanding around the globe and is available in several countries. The brand offers different beauty products from high-end beauty brands and makes them accessible to users even before purchasing.
  
  
  <h1>Tech Stack Used : </h1>
@@ -11,7 +10,8 @@ In case of any suggestion and query feel free to connect
 <li>javascript</li>  
 <li>React</li>
 <li>font Awesom icons</li>
-<li>bootstrap (for styling flash mesage)</li>
+<li>bootstrap </li>
+ <li>Material UI </li>
 <li>Nodejs</li>
  <li>React</li>
 
@@ -25,11 +25,6 @@ In case of any suggestion and query feel free to connect
  <li>react-router-dom : 5.3.0</li>
  
  <li>styled-components : 5.3.1</li>
- 
- 
- 
- <h1>About </h1>
-Sephora is a French multinational retailer of famous beauty brand that has captured the hearts of millions of beauty shoppers worldwide. This company is also expanding around the globe and is available in several countries. The brand offers different beauty products from high-end beauty brands and makes them accessible to users even before purchasing.
 
 
 ### Project Description
