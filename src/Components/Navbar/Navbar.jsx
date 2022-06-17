@@ -54,7 +54,7 @@ const Navbar = () => {
                                     <li>
                                         <RiContactsLine />
                                     </li>
-                                    <li style={{ marginLeft: "5px" }}>{navData == null ? "Login" : "Logout"}</li>
+                                    <li style={{ marginLeft: "5px" }}>{navData == null ? "Login" : ""}</li>
                                 </span>
                             </Link>
                             <div>{navData == null ? "" : navData} </div>
