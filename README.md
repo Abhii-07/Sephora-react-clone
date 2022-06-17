@@ -54,32 +54,25 @@ _Or you can directly explore our project through this link_
  ### _Following are the Screenshots for the reference_
 
 - **Landing Page**
-  ![Landing Page](https://miro.medium.com/max/1400/1*UB-C6C9NNV3udcmNFoyOBg.png)
+  ![Landing Page](/src/Assets/Screenshot%20(52).png)
 
 - **Product Page**
 
-  ![Product Page](https://miro.medium.com/max/940/1*5HafmzQ-Z4ySizSHgx_TUQ.png)
+  ![Product Page](/src/Assets/Screenshot%20(57).png)
 
 - **Product-details Page**
 
-  ![Product-details Page](https://miro.medium.com/max/1400/1*vDtXNb8Ylet-4ikgvHtknQ.png)
+  ![Product-details Page](/src/Assets/Screenshot%20(58).png)
 
 - **Cart-Page**
 
-  ![Cart-Page](https://miro.medium.com/max/1400/1*ctMmSn6msr_SwWDU8YTKig.png)
-
-- **Checkout Page**
-
-  ![Checkout Page](https://miro.medium.com/max/1400/1*pQiczrwkoRosV5QUJEr5Vg.png)
-  
+  ![Cart-Page](/src/Assets/Screenshot%20(55).png)
 
 - **Sign-In Page**
 
-  ![Sign-In Page](https://miro.medium.com/max/1400/1*A2cMBrWWvcafYev5_zC3DA.png)
+  ![Sign-In Page](/src/Assets/Screenshot%20(54).png)
 
-- **Payment Page**
 
-  ![Payment Page](https://miro.medium.com/max/1400/1*aBg4DT5IG4JAFJ68pwQGqA.png)
 
 
 ---
