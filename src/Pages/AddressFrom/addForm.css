@@ -9,7 +9,8 @@
 
 }
 .addForm{
-  width: 50%;
+  /* width: 60%; */
+  padding: 10px;
   height:450px;
   position: absolute;
   left:25%;

@@ -7,6 +7,10 @@ import { useState } from "react";
 
 const Navbar = () => {
     const navData = JSON.parse(localStorage.getItem("user"));
+    const cartItems = JSON.parse(localStorage.getItem("shopping-cart"));
+    const [user, setUser] = useState("")
+    
+    
     const handleName = () => {
         //  localStorage.clear();
         localStorage.removeItem("user");
@@ -42,6 +46,7 @@ const Navbar = () => {
                                 <li>
                                     <HiOutlineShoppingBag />
                                 </li>
+                                
                             </Link>
                             <li>|</li>
                             <Link to={`/login`}>
@@ -49,7 +54,7 @@ const Navbar = () => {
                                     <li>
                                         <RiContactsLine />
                                     </li>
-                                    <li style={{ marginLeft: "5px" }}>{navData == null ? "Login" : ""}</li>
+                                    <li style={{ marginLeft: "5px" }}>{navData == null ? "Login" : "Logout"}</li>
                                 </span>
                             </Link>
                             <div>{navData == null ? "" : navData} </div>

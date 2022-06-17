@@ -83,19 +83,9 @@ _Or you can directly explore our project through this link_
 
 
 ---
+### Deployed Link
 
-### About Project
-
-> 
-
----
-
-### Medium Link
-
-------
-
-
-### Netlify Link
+https://sephora-react-clone.vercel.app
  ------
  <h1>WEBSITE USER FLOW ></h1>
  ----

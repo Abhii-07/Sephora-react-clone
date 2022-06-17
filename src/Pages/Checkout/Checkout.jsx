@@ -2,38 +2,45 @@ import React, { useEffect, useState } from 'react'
 import { MdFavoriteBorder } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { ProductCard } from '../../Components/Styled-Components/ProductStyle';
+import { AddForm } from '../AddressFrom/AddForm';
 import styles from "../Style/Checkout.module.css"
 
 const Checkout = () => {
     // const port = process.env.PORT || 4000;
-    // const shoppingCart = JSON.parse(localStorage.getItem("shopping-cart")) || [];
-    // console.log(shoppingCart);
+    const shoppingCart = JSON.parse(localStorage.getItem("shopping-cart")) || [];
+    console.log(shoppingCart);
 
     const [posts, setPosts] = useState([]);
     const [subtotal, setSubtotal] = useState();
     const [total, setTotal] = useState(subtotal);
     // const [cart, setCart] = useState([posts]);
     const [discount, setDiscount] = useState(0)
-     
 
 
-    const getdata = async () => {
-        fetch(`https://sephora-clone.herokuapp.com/cart`)
-            .then((d) => d.json())
-            .then((data) => {
-                setPosts(data);
-                for (let i = 0; i < posts.length; i++) {
-                    let Prices = (posts[i].price)
-                    // console.log("Prices:", Prices )
-                }
-                // console.log(data[0].price);
-            });
-    };
+    const getPrice = () => {
+        for (let i = 0; i < posts.length; i++) {
+            let Prices = (posts[i].price)
+            console.log("Prices:", Prices)
+        }
+    }
+
+    // const getdata = async () => {
+    //     fetch(`https://sephora-clone.herokuapp.com/cart`)
+    //         .then((d) => d.json())
+    //         .then((data) => {
+    //             setPosts(data);
+    //             for (let i = 0; i < posts.length; i++) {
+    //                 let Prices = (posts[i].price)
+    //                 // console.log("Prices:", Prices )
+    //             }
+    //             // console.log(data[0].price);
+    //         });
+    // };
 
     const getTotal = () => {
         let ans = 0;
-        posts.map((item) => {
-            console.log(" Posts :",posts);
+        shoppingCart.map((item) => {
+            console.log(" Posts :", posts);
             ans += item.price;
             setSubtotal(ans);
             console.log("Total Ans :", subtotal);
@@ -42,8 +49,9 @@ const Checkout = () => {
     }
 
     useEffect(() => {
-        getdata();
+        // getdata();
         getTotal();
+
     }, []);
 
     const addWishlist = (e) => {
@@ -59,12 +67,13 @@ const Checkout = () => {
         );
 
     }
+    
     return (
         <div>
             <h1 className={styles.title}>SHOPPING BAG</h1>
             <div className={styles.displayCartPage}>
                 <div className={styles.firstBox}>
-                    {posts.map((e) => (
+                    {shoppingCart.map((e) => (
                         <div
                             id="productCard"
                             key={e.productName}
@@ -126,7 +135,7 @@ const Checkout = () => {
                     <div onClick={() => {
                         setDiscount(1000)
                         total = subtotal - discount;
-                        setTotal(total)
+                        // setTotal(total)
                     }} className={styles.secondBoxTitle}>Apply Promo Code</div>
                     <div>
                         {/* <h1>Overview</h1>
@@ -142,25 +151,25 @@ const Checkout = () => {
                                     <td>{subtotal}</td>
                                 </tr>
                                 <tr>
-                                    <td>Discount</td>
+                                    <td style={{color:"pink"}}>Discount</td>
                                     <td>{discount}</td>
                                 </tr>
 
                                 <tr>
                                     <td>GST</td>
-                                    <td>0</td>
+                                    <td>100</td>
                                 </tr>
                                 <tr>
                                     <td>Delivery Charges</td>
-                                    <td>0</td>
+                                    <td>99</td>
                                 </tr>
                                 <tr>
                                     <td>Total</td>
-                                    <td>{total}</td>
+                                    <td>{subtotal + 100 + 99 - discount}</td>
                                 </tr>
                             </tbody>
                         </table>
-                        <div className={styles.checkoutBtn}><button className={styles.checkoutBtn}>CHECKOUT</button></div>
+                        <div className={styles.checkoutBtn}><Link className={styles.checkoutBtn} to = "/addform">CHECKOUT</Link></div>
                         <div><button className={styles.ShopMoreBtn}>SHOP MORE</button></div>
                     </div>
                 </div>

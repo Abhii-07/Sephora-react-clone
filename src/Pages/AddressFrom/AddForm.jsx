@@ -3,6 +3,7 @@ import styled from "styled-components"
 import React from "react"
 import {useState,useEffect} from "react"
 import "./addForm.css"
+import { Link } from "react-router-dom";
 export const AddForm = ({setShowForm}) => {
     
     const [formData, setFormData] = useState({
@@ -26,6 +27,8 @@ export const AddForm = ({setShowForm}) => {
       localStorage.setItem("sephoraAddress", JSON.stringify(formData));
       console.log(formData)
       setShowForm(false)
+      setFormData("")
+      alert("Order placed")
     };
     
     useEffect(()=>{
@@ -93,6 +96,8 @@ export const AddForm = ({setShowForm}) => {
               id="submit"
               onClick={handleSubmit}
             />
+            
+            
           </form>
         </div>
       </div>

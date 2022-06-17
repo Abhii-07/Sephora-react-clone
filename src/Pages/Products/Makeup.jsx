@@ -1,17 +1,43 @@
-import { useEffect, useState } from "react";
+import { React, useEffect, useState } from "react";
 import { ProductCard } from "../../Components/Styled-Components/ProductStyle";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { MdFavoriteBorder } from "react-icons/md";
 import "../Style/MainBody.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
+
+// const baseURL = "https://sephora-clone.herokuapp.com/cart";
 const Makeup = () => {
   const [product, setproduct] = useState([]);
   const [brandfilter, setBrandFilter] = useState("ALL");
   const [priceRange, setPriceRange] = useState("0-10000");
+  // const [post, setPost] = useState([]);
+
+  // const addToCart = (e) => {
+  //   // axios.post("https://sephora-clone.herokuapp.com/cart", { cart })
+  //   //   .then((response) => setPost(response.data))
+  //   //   .catch(error => {
+  //   //     console.log(error.response)
+  //   //   });
+
+  //   const { image_url, image2_url, brandname, productName, price, available, background } = post;
+  //   const user = { image_url, image2_url, brandname, productName, price, available, background };
+  //   axios
+  //     .post(`https://sephora-clone.herokuapp.com/cart`, {
+  //       user
+  //     })
+  //     .then((response) => {
+  //       console.log(response.data)
+  //       setPost(response.data);
+  //     });
+  // }
+
+  // if (!post) return "No post!"
 
   useEffect(() => {
     getdata();
+    // addToCart();
   }, []);
 
   const getdata = async () => {
@@ -19,7 +45,7 @@ const Makeup = () => {
       .then((d) => d.json())
       .then((data) => {
         setproduct(data);
-        console.log(data);
+        // console.log(data);
       });
   };
   const handelSort = (by) => {
@@ -188,16 +214,16 @@ const Makeup = () => {
                 id="productCard"
                 key={e.productName}
                 onClick={() => {
-                  let arr=[]
+                  let arr = []
                   arr.push(e)
                   localStorage.setItem("hair-cart", JSON.stringify(arr));
                 }}
               >
                 <ProductCard Product={product}>
                   <div id="imgDiv">
-                  <Link to={`/ProductDetails`}>
-                    <img src={e.image_url} id="productimg1" />
-                    <img src={e.image2_url} id="productimg2" />
+                    <Link to={`/ProductDetails`}>
+                      <img src={e.image_url} id="productimg1" />
+                      <img src={e.image2_url} id="productimg2" />
                     </Link>
                     <div id="Scrollup_Button">
                       <button
@@ -216,6 +242,12 @@ const Makeup = () => {
                         <HiOutlineShoppingBag id="symbollcss"></HiOutlineShoppingBag>
                         <span id="textCSS">ADD TO CART</span>
                       </button>
+                      {/* <button
+                        onClick={addToCart}
+                      >
+                        <HiOutlineShoppingBag id="symbollcss"></HiOutlineShoppingBag>
+                        <span id="textCSS">ADD TO CART</span>
+                      </button> */}
                       <button
                         onClick={(event) => {
                           var wishlistArr =
@@ -234,12 +266,12 @@ const Makeup = () => {
                       </button>
                     </div>
                   </div>
-                  <Link to={`/productdetail`} style={{textDecoration: "none"}}>
-                  <div id="textDiv">
-                    <p>{e.brandname}</p>
-                    <p>{e.productName}</p>
-                    <p>₹ {e.price}</p>
-                  </div>
+                  <Link to={`/productdetail`} style={{ textDecoration: "none" }}>
+                    <div id="textDiv">
+                      <p>{e.brandname}</p>
+                      <p>{e.productName}</p>
+                      <p>₹ {e.price}</p>
+                    </div>
                   </Link>
                 </ProductCard>
               </div>
