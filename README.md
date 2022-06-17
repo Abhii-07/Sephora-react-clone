@@ -5,7 +5,7 @@
 In case of any suggestion and query feel free to connect 
  
  
- <h1>TOOLS AND TECHNOLOGY USED ></h1>
+ <h1>Tech Stack Used : </h1>
   <li>HTML </li>
      <li>css</li>
 <li>javascript</li>  
