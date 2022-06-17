@@ -44,7 +44,7 @@ _To start with the Project install the dependecies
 _Or you can directly explore our project through this link_
 
 ### Deployment Link
- 
+ https://sephora-react-clone.vercel.app/
  
  ### _Following are the Screenshots for the reference_
 
