@@ -12,7 +12,6 @@ Sephora is a French multinational retailer of famous beauty brand that has captu
 <li>font Awesom icons</li>
 <li>bootstrap </li>
  <li>Material UI </li>
-<li>Nodejs</li>
  <li>React</li>
 
  
